@@ -1,4 +1,4 @@
-package global.goit.edu;
+package global.goit.edu.httpstatus;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -26,15 +26,4 @@ public class HttpStatusImageDownloader {
         }
 
     }
-
-    public static void main(String[] args) {
-
-        HttpStatusImageDownloader downloader = new HttpStatusImageDownloader();
-
-        downloader.downloadStatusImage(200);
-        downloader.downloadStatusImage(300);
-        downloader.downloadStatusImage(400);
-
-    }
-
 }

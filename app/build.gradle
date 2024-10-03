@@ -28,8 +28,20 @@ dependencies {
     implementation group: 'org.jsoup', name: 'jsoup', version: '1.17.2'
 
     // https://mvnrepository.com/artifact/org.projectlombok/lombok
-    compileOnly 'org.projectlombok:lombok:1.18.20'
-    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // https://mvnrepository.com/artifact/com.github.stefanbirkner/system-rules
+    testImplementation group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.19.0'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.1'
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.23.1'
+
+    // https://mvnrepository.com/artifact/com.guicedee.services/slf4j
+    implementation group: 'com.guicedee.services', name: 'slf4j', version: '1.2.2.1-jre17'
 
 }
 

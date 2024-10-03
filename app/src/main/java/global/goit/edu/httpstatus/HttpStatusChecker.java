@@ -1,4 +1,4 @@
-package global.goit.edu;
+package global.goit.edu.httpstatus;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -22,7 +22,6 @@ public class HttpStatusChecker {
             String message = "Incorrect code - " + code;
             throw new IllegalArgumentException(message);
         }
-
         return url.toString();
     }
 

@@ -1,5 +1,6 @@
 package global.goit.edu;
 
+import global.goit.edu.httpstatus.HttpStatusImageDownloader;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

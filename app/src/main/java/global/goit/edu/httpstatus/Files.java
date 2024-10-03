@@ -1,7 +1,6 @@
-package global.goit.edu;
+package global.goit.edu.httpstatus;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 

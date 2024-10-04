@@ -18,20 +18,25 @@ public class HttpImageStatusCli {
         while (true) {
             String input = sc.nextLine();
 
-            if (isInteger(input)) {
-                try {
-                    downloader.downloadStatusImage(Integer.parseInt(input));
-                    System.out.println("Image for HTTP status - " + input + ", download successfully");
+            checkInputValue(input);
+        }
+    }
 
-                } catch (IllegalArgumentException e) {
-                    System.out.println("There is not image for HTTP status " + input);
-                    System.out.println("Please enter valid HTTP status:");
-                }
-            } else if (input.equals("exit")) {
-                System.exit(0);
-            } else {
-                System.out.println("Please enter valid number");
+    public void checkInputValue(String input) {
+        if (isInteger(input)) {
+            try {
+                downloader.downloadStatusImage(Integer.parseInt(input));
+                System.out.println("Image for HTTP status - " + input + ", download successfully");
+
+            } catch (IllegalArgumentException e) {
+                System.out.println("There is not image for HTTP status " + input);
+                System.out.println("Please enter valid HTTP status:");
             }
+        } else if (input.equals("exit")) {
+            //System.exit(0);
+            System.out.println("User input exit");
+        } else {
+            System.out.println("Please enter valid number");
         }
     }
 

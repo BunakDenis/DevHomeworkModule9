@@ -15,6 +15,11 @@ public class CliFSM {
         sc = new Scanner(System.in);
     }
 
+    public CliFSM(Scanner scanner) {
+        status = new HttpImageStatusCli();
+        this.sc = scanner;
+    }
+
     public void startInputLoop() {
         status.askStatus(sc);
     }

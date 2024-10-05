@@ -21,9 +21,9 @@ public class HttpStatusImageDownloaderTests {
         codes.add(200);
         codes.add(300);
         codes.add(400);
-        expected.add("D:\\Java\\IDEProjects\\Developer\\DevHomeworkModule9\\app\\src\\main\\resources\\status_code_200.jpg");
-        expected.add("D:\\Java\\IDEProjects\\Developer\\DevHomeworkModule9\\app\\src\\main\\resources\\status_code_300.jpg");
-        expected.add("D:\\Java\\IDEProjects\\Developer\\DevHomeworkModule9\\app\\src\\main\\resources\\status_code_400.jpg");
+        expected.add("src/main/resources/status_code_200.jpg");
+        expected.add("src/main/resources/status_code_300.jpg");
+        expected.add("src/main/resources/status_code_400.jpg");
 
         //When
         for (Integer code : codes) {

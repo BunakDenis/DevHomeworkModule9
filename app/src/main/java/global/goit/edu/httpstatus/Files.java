@@ -20,8 +20,7 @@ public class Files {
     }
 
     private static String getFileName(String url) {
-
-        StringBuilder result = new StringBuilder("D:\\Java\\IDEProjects\\Developer\\DevHomeworkModule9\\app\\src\\main\\resources\\");
+        StringBuilder result = new StringBuilder("src/main/resources/");
 
         String[] stringsUrl = url.split("/");
 
